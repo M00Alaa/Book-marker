@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMarker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container pt-3">
+      <h1 class="pb-3">Bookmarker</h1>
+      <hr />
+      <div class="form-project text-center bg-gray px-5 py-4 my-5">
+        <h2>Bookmark your favorite sites</h2>
+        <div>
+          <label class="my-2">Site Name</label>
+          <input
+            id="bookName"
+            class="form-control"
+            type="text"
+            placeholder="Bookmark Name"
+          />
+          <div id="nameAlert" class="alert alert-danger d-none my-3 py-2">
+            The book name must start with a capital letter and contain at least
+            three lowercase letters ..
+          </div>
+        </div>
+        <div>
+          <label class="my-2">Site URL</label>
+          <input
+            id="bookLink"
+            class="form-control"
+            type="text"
+            placeholder="website URL"
+          />
+          <div id="linkAlert" class="alert alert-danger d-none my-3 py-2">
+            The book link must contain at least three lowercase letters and end
+            with (.com) or (.net) ..
+          </div>
+        </div>
+        <button disabled id="submit" class="btn btn-primary mt-3">
+          Submit
+        </button>
+      </div>
+      <input
+        id="searchBook"
+        class="form-control my-3"
+        type="text"
+        placeholder="search by bookmarker name"
+      />
+      <div class="bg-gray">
+        <table class="table">
+          <thead></thead>
+          <tbody id="myBody"></tbody>
+        </table>
+      </div>
+      <hr class="my-4" />
+      <footer>
+        <h6 class="text-muted">Â© 2019 Bookmarker Inc.</h6>
+      </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
